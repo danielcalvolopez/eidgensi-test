@@ -11,3 +11,5 @@ As for this test it was specified that the product page should fetch the data fr
 I also created a second option which consists on fetching the data directly from the API that takes the ID number, hence you will find two functions in the utils folder: getProducts and getProduct (that accepts an ID parameter).
 
 The styles have been applied using CSS modules.
+
+Deployment (Vercel): https://eidgensi-test.vercel.app/
