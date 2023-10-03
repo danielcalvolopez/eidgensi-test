@@ -5,8 +5,6 @@ import ProductCard from "./ProductCard";
 const Products = async () => {
   const data = await getProducts();
 
-  console.log(data.products);
-
   return (
     <div className={classes["products-container"]}>
       <div className={classes.products}>
