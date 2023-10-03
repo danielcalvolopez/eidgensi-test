@@ -50,3 +50,9 @@
 .product-card-container .button:hover {
   background-color: #11866dd7;
 }
+
+@media (max-width: 450px) {
+  .product-card-container {
+    width: 100%;
+  }
+}

@@ -3,22 +3,23 @@
 import classes from "./product-card.module.css";
 import Link from "next/link";
 
-const ProductCard = ({ thumbnail, title, description, id, products }) => {
+const ProductCard = ({ thumbnail, title, description, id, productPage }) => {
   return (
     <div className={classes["product-card-container"]}>
       <img className={classes.img} src={thumbnail} alt="" />
       <div className={classes["product-info"]}>
         <h3>{title}</h3>
         <p>{description}</p>
-        <Link
-          className={classes.button}
-          href={{
-            pathname: `/${id}`,
-            query: { products: products },
-          }}
-        >
-          SEE PRODUCT
-        </Link>
+        {!productPage && (
+          <Link
+            className={classes.button}
+            href={{
+              pathname: `/${id}`,
+            }}
+          >
+            SEE PRODUCT
+          </Link>
+        )}
       </div>
     </div>
   );
