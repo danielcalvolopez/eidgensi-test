@@ -1,0 +1,12 @@
+.products-container {
+  display: flex;
+  justify-content: center;
+}
+
+.products {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 100px;
+}

@@ -1,7 +1,27 @@
-import classes from "./product-card.module.css";
+"use client";
 
-const ProductCard = () => {
-  return <div className={classes["product-card-container"]}>ProductCard</div>;
+import classes from "./product-card.module.css";
+import Link from "next/link";
+
+const ProductCard = ({ thumbnail, title, description, id, products }) => {
+  return (
+    <div className={classes["product-card-container"]}>
+      <img className={classes.img} src={thumbnail} alt="" />
+      <div className={classes["product-info"]}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <Link
+          className={classes.button}
+          href={{
+            pathname: `/${id}`,
+            query: { products: products },
+          }}
+        >
+          SEE PRODUCT
+        </Link>
+      </div>
+    </div>
+  );
 };
 
 export default ProductCard;
