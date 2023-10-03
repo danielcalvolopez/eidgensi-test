@@ -16,7 +16,7 @@ const ProductCard = ({ thumbnail, title, description, id, productPage }) => {
               pathname: `/${id}`,
             }}
           >
-            SEE PRODUCT
+            see product{" "}
           </Link>
         )}
       </div>
