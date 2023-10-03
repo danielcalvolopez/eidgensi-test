@@ -13,8 +13,8 @@ const ProductPage = async ({ params }) => {
     (product) => product.id == params.productId
   );
 
-  // option 2: It fetches the product straight with the ID. To use this one you have to replace every "currentProduct" for "product".
-  // const product = await getProduct(params.productId);
+  // option 2: It fetches the product straight with the ID in the API.
+  // const currentProduct = await getProduct(params.productId);
 
   return (
     <div className={classes["product-page-container"]}>
