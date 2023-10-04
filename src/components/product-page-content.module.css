@@ -1,0 +1,25 @@
+.product-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.navigation {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  cursor: pointer;
+}
+
+.navigation:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+  .product-page-container {
+    padding: 100px 10px;
+  }
+}

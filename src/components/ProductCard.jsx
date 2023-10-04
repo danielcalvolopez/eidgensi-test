@@ -1,6 +1,7 @@
 "use client";
 import classes from "./product-card.module.css";
 import Link from "next/link";
+import LinkButton from "./UI/LinkButton";
 
 const ProductCard = ({ thumbnail, title, description, id, productPage }) => {
   return (
@@ -11,16 +12,7 @@ const ProductCard = ({ thumbnail, title, description, id, productPage }) => {
         <h3>{title}</h3>
       </div>
       <p>{description}</p>
-      {!productPage && (
-        <Link
-          className={classes.button}
-          href={{
-            pathname: `/${id}`,
-          }}
-        >
-          see product{" "}
-        </Link>
-      )}
+      {!productPage && <LinkButton id={id}>see product</LinkButton>}
     </div>
   );
 };
