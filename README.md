@@ -6,7 +6,7 @@ This is a technical test for Eidgensi.
 
 3. Create dynamic pages for each product.
 
-As for this test it was specified that the product page should fetch the data from the same API, I have fetched all the products and user the Find method to find the current product by its ID.
+As for this test it was specified that the product page should fetch the data from the same API, I have fetched all the products and used the Find method to find the current product by its ID.
 
 I also created a second option which consists on fetching the data directly from the API that takes the ID number, hence you will find two functions in the utils folder: getProducts and getProduct (that accepts an ID parameter).
 
