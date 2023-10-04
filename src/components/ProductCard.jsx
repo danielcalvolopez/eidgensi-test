@@ -1,6 +1,5 @@
 "use client";
 import classes from "./product-card.module.css";
-import Link from "next/link";
 import LinkButton from "./UI/LinkButton";
 
 const ProductCard = ({ thumbnail, title, description, id, productPage }) => {
