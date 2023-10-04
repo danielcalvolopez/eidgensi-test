@@ -29,10 +29,10 @@ const ProductPage = async ({ params }) => {
       </div>
       <ProductCard
         productPage
-        title={currentProduct.title}
-        description={currentProduct.description}
-        id={currentProduct.id}
-        thumbnail={currentProduct.thumbnail}
+        title={currentProduct?.title}
+        description={currentProduct?.description}
+        id={currentProduct?.id}
+        thumbnail={currentProduct?.thumbnail}
       />
     </div>
   );
